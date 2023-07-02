@@ -14,6 +14,7 @@
 		49772F612A51E21A0035A99F /* StarbucksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49772F602A51E21A0035A99F /* StarbucksTests.swift */; };
 		49772F6B2A51E21A0035A99F /* StarbucksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49772F6A2A51E21A0035A99F /* StarbucksUITests.swift */; };
 		49772F6D2A51E21A0035A99F /* StarbucksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49772F6C2A51E21A0035A99F /* StarbucksUITestsLaunchTests.swift */; };
+		499843DF2A51EE5300417DE2 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499843DE2A51EE5300417DE2 /* TabbarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		49772F662A51E21A0035A99F /* StarbucksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarbucksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49772F6A2A51E21A0035A99F /* StarbucksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarbucksUITests.swift; sourceTree = "<group>"; };
 		49772F6C2A51E21A0035A99F /* StarbucksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarbucksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		499843DE2A51EE5300417DE2 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,11 @@
 		49772F4E2A51E2180035A99F /* Starbucks */ = {
 			isa = PBXGroup;
 			children = (
-				49772F4F2A51E2180035A99F /* StarbucksApp.swift */,
-				49772F512A51E2180035A99F /* ContentView.swift */,
+				49772F792A51E28C0035A99F /* App */,
+				49772F7B2A51E2C50035A99F /* Core */,
+				49772F7C2A51E2CD0035A99F /* Extensions */,
+				49772F7D2A51E2D60035A99F /* Model */,
+				49772F7E2A51E2E50035A99F /* Service */,
 				49772F532A51E21A0035A99F /* Assets.xcassets */,
 				49772F552A51E21A0035A99F /* Preview Content */,
 			);
@@ -125,6 +130,108 @@
 				49772F6C2A51E21A0035A99F /* StarbucksUITestsLaunchTests.swift */,
 			);
 			path = StarbucksUITests;
+			sourceTree = "<group>";
+		};
+		49772F792A51E28C0035A99F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				49772F4F2A51E2180035A99F /* StarbucksApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		49772F7B2A51E2C50035A99F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				49772F852A51E3B20035A99F /* Authentication */,
+				49772F832A51E3770035A99F /* Gift */,
+				49772F802A51E3440035A99F /* Home */,
+				49772F822A51E3700035A99F /* Order */,
+				49772F812A51E3650035A99F /* Scan */,
+				49772F842A51E3810035A99F /* Stores */,
+				49772F7F2A51E3220035A99F /* Root */,
+				499843DD2A51EE1B00417DE2 /* Tabbar */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		49772F7C2A51E2CD0035A99F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		49772F7D2A51E2D60035A99F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49772F7E2A51E2E50035A99F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		49772F7F2A51E3220035A99F /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				49772F512A51E2180035A99F /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		49772F802A51E3440035A99F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		49772F812A51E3650035A99F /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		49772F822A51E3700035A99F /* Order */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		49772F832A51E3770035A99F /* Gift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gift;
+			sourceTree = "<group>";
+		};
+		49772F842A51E3810035A99F /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		49772F852A51E3B20035A99F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		499843DD2A51EE1B00417DE2 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				499843DE2A51EE5300417DE2 /* TabbarView.swift */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499843DF2A51EE5300417DE2 /* TabbarView.swift in Sources */,
 				49772F522A51E2180035A99F /* ContentView.swift in Sources */,
 				49772F502A51E2180035A99F /* StarbucksApp.swift in Sources */,
 			);
